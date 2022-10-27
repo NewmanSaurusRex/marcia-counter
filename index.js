@@ -11,11 +11,12 @@ let count = 0;
 
 function increment() {
   count += 1;
-  countEl.innerText = count;
+  countEl.textContent = count;
 }
 
 function save() {
   let previousCount = count + " - ";
   saveEl.textContent += previousCount;
-  console.log(count);
+  countEl.textContent = 0;
+  count = 0;
 }
